@@ -18,6 +18,7 @@ struct ContentViewiPad: View {
                         .background(Color.red)
                         .clipShape(Circle())
                         .foregroundColor(.white)
+                        .navigationTitle("One")
                 } label: {
                     Text("One")
                 }
@@ -29,6 +30,7 @@ struct ContentViewiPad: View {
                         .background(Color.red)
                         .clipShape(Circle())
                         .foregroundColor(.white)
+                        .navigationTitle("Two")
                 } label: {
                     Text("Two")
                 }
@@ -40,9 +42,18 @@ struct ContentViewiPad: View {
                         .background(Color.red)
                         .clipShape(Circle())
                         .foregroundColor(.white)
+                        .navigationTitle("Three")
                 } label: {
                     Text("Three")
                 }
+                
+                
+                NavigationLink {
+                    OfflineView()
+                } label: {
+                    Text("Offline")
+                }
+                
             }.listStyle(.sidebar)
             
             Text("Hellow World")

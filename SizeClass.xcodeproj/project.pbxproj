@@ -14,6 +14,9 @@
 		3C4B8C1727A9146100630E2E /* ContentViewiPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B8C1627A9146100630E2E /* ContentViewiPad.swift */; };
 		3C4B8C1927A9160600630E2E /* SizeClassTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B8C1827A9160600630E2E /* SizeClassTestView.swift */; };
 		3C4B8C1B27A9183600630E2E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B8C1A27A9183600630E2E /* DashboardView.swift */; };
+		3C4B8C1D27A9198800630E2E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B8C1C27A9198800630E2E /* LoginView.swift */; };
+		3C4B8C2027A919AB00630E2E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B8C1F27A919AB00630E2E /* LoginViewModel.swift */; };
+		3C4B8C2327A91C6700630E2E /* OfflineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B8C2227A91C6700630E2E /* OfflineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		3C4B8C1627A9146100630E2E /* ContentViewiPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewiPad.swift; sourceTree = "<group>"; };
 		3C4B8C1827A9160600630E2E /* SizeClassTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassTestView.swift; sourceTree = "<group>"; };
 		3C4B8C1A27A9183600630E2E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		3C4B8C1C27A9198800630E2E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3C4B8C1F27A919AB00630E2E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3C4B8C2227A91C6700630E2E /* OfflineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +63,12 @@
 		3C4B8C0727A913AA00630E2E /* SizeClass */ = {
 			isa = PBXGroup;
 			children = (
+				3C4B8C2127A91C5A00630E2E /* Views */,
+				3C4B8C1E27A9199A00630E2E /* ViewModel */,
 				3C4B8C0827A913AA00630E2E /* SizeClassApp.swift */,
-				3C4B8C0A27A913AA00630E2E /* ContentView.swift */,
 				3C4B8C0C27A913AC00630E2E /* Assets.xcassets */,
 				3C4B8C0E27A913AC00630E2E /* Preview Content */,
-				3C4B8C1627A9146100630E2E /* ContentViewiPad.swift */,
 				3C4B8C1827A9160600630E2E /* SizeClassTestView.swift */,
-				3C4B8C1A27A9183600630E2E /* DashboardView.swift */,
 			);
 			path = SizeClass;
 			sourceTree = "<group>";
@@ -74,6 +79,26 @@
 				3C4B8C0F27A913AC00630E2E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C4B8C1E27A9199A00630E2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B8C1F27A919AB00630E2E /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C4B8C2127A91C5A00630E2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B8C2227A91C6700630E2E /* OfflineView.swift */,
+				3C4B8C0A27A913AA00630E2E /* ContentView.swift */,
+				3C4B8C1627A9146100630E2E /* ContentViewiPad.swift */,
+				3C4B8C1A27A9183600630E2E /* DashboardView.swift */,
+				3C4B8C1C27A9198800630E2E /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4B8C1D27A9198800630E2E /* LoginView.swift in Sources */,
 				3C4B8C0B27A913AA00630E2E /* ContentView.swift in Sources */,
+				3C4B8C2327A91C6700630E2E /* OfflineView.swift in Sources */,
 				3C4B8C1727A9146100630E2E /* ContentViewiPad.swift in Sources */,
 				3C4B8C1B27A9183600630E2E /* DashboardView.swift in Sources */,
 				3C4B8C1927A9160600630E2E /* SizeClassTestView.swift in Sources */,
 				3C4B8C0927A913AA00630E2E /* SizeClassApp.swift in Sources */,
+				3C4B8C2027A919AB00630E2E /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

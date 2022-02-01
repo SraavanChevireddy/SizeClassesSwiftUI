@@ -10,9 +10,22 @@ import SwiftUI
 @main
 struct SizeClassApp: App {
     
+    @ObservedObject var loginVM =  LoginViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            DashboardView()
+            Group{
+                if loginVM.screen == .dashboard{
+                     DashboardView()
+                }else if loginVM.screen == .offline{
+                    NavigationView{
+                        OfflineView()
+                    }.navigationViewStyle(.columns)
+                }else{
+                     LoginView()
+                 }
+            }.environmentObject(loginVM)
+
         }
     }
 }
